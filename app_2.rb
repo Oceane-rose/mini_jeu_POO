@@ -4,6 +4,8 @@ Bundler.require
 require_relative 'lib/game'
 require_relative 'lib/player'
 
+def perform
+
 puts "
                   ------------------------------------------------
                    |WELCOME ON THE FUNNIER GAME YOU EVER PLAYED ! |
@@ -71,6 +73,8 @@ enemies = [enemy1,enemy2]
     puts "\nThe enemies are attacking you ! o()xxxx[{::::::::::::::::::> "
     enemies.each {|enemy| enemy.attacks(player1) if enemy.life_points > 0 }
   end 
-  
+ 
+end
+perform
 
-binding.pry
+
