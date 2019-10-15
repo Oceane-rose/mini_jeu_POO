@@ -78,14 +78,14 @@ class HumanPlayer < Player
       @life_points += 50 
       puts "Congrats, you found a +50 points heath pack"
       puts "You have #{@life_points} life points."
-      if @life_points > 100 then @life_points = 100
+      if @life_points > 100 then @life_points == 100
       
       end
     when 6
       @life_points += 80 
       puts "Wooooow, you found a +80 points heath pack"
       puts "You have #{@life_points} life points."
-      if @life_points > 100 then @life_points = 100
+      if @life_points > 100 then @life_points == 100
       end
     end
   end
